@@ -10,7 +10,7 @@ from . import views
 # 	path('updatetournament/<int:pk>/delete/', views.delete_tournament, name='delete-items'),
 # ]
 urlpatterns = [
-    path("alltournament/",views.ListAPIView.as_view(),name="tournament_list"),
+    path("alltournament/",views.ListTounamentAPIView.as_view(),name="tournament_list"),
     path("create/", views.CreateTournamentAPIView.as_view(),name="tournament_create"),
     path("update/<int:pk>/",views.UpdateTournamentAPIView.as_view(),name="update_tournament"),
     path("delete/<int:pk>/",views.DeleteTournamentAPIView.as_view(),name="delete_tournament")
